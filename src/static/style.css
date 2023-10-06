@@ -16,8 +16,8 @@ body {
 .crawler-container {
     position: absolute;
     z-index: 10;
-    width: 50%;
-    max-height: 10%;
+    width: 85%;
+    max-height: 15%;
     top: 5%;
     right: 0;
     background-color: rgba(255, 255, 255, 0.5);
@@ -27,7 +27,7 @@ body {
     position: absolute;
     z-index: 10;
     width: 10%;
-    height: 50%;
+    height: 70%;
     top: 20%;
     right: 2%;
     background-color: rgba(255, 255, 255, 0.5);
@@ -37,7 +37,7 @@ body {
 .legend-float {
     float: left;
     height: 100%;
-    margin: 5px;
+    /* margin-left: 5px; */
 }
 
 #legend-header {
@@ -53,7 +53,7 @@ body {
 
 #cbar-labels {
     position: relative;
-    width: 30%;
+    width: 50%;
     display: flex;
 }
 
@@ -65,7 +65,7 @@ body {
 
 #cbar-label-top {
     position: absolute;
-    top: 0;
+    top: 5%;
 }
 
 #cbar-label-bottom {
@@ -74,9 +74,13 @@ body {
 }
 
 #cbar {
-    width: 30%;
+    width: 20%;
     background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(40,11,83,1) 14%, rgba(101,21,110,1) 28%, rgba(159,42,99,1) 42%, rgba(212,72,66,1) 57%, rgba(245,125,21,1) 71%, rgba(250,194,40,1) 86%, rgba(252,255,164,1) 100%);
     /* background-color: red; */
+    
+    
+    clip-path: polygon(0 5%, 50% 0, 100% 5%, 100% 100%, 0 100%
+    )
 }
 
 #legend-annotation {

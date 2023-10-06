@@ -56,8 +56,10 @@ function init() {
   THREE.RectAreaLightUniformsLib.init();
 
   // const season = document.getElementById("hidden-season").value;
-  let season = window.sessionStorage.getItem("model") || 'annual'
-  const fp = "./static/" + season + "_scene.json"
+  let city = window.sessionStorage.getItem("city") || 'singapore'
+  let season = window.sessionStorage.getItem("season") || 'annual'
+  
+  const fp = "./static/" + city + "/" + season + "_scene.json"
   console.log(season)
 
   // load scene
@@ -75,7 +77,6 @@ function init() {
       var box = new THREE.Box3().setFromObject( obj );
       var center = new THREE.Vector3();
       box.getCenter( center );
-      console.log(center)
       camera.position.set( -176,50,124 ); // all components equal
       controls.target = center;
       controls.update();

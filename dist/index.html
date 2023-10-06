@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Zurich Solar Energy</title>
+	<title>Urban Solar Energy</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Meli Harvey">
 	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
@@ -45,11 +45,18 @@
 	<div class="HUD">
 		<div class="crawler-container">
 			<h2 class="inline-sentence">
-				Here we present a solar radiation model for a portion of the Zurich case study. We have provided several
+				Select a
+				<span id="hiddenCity" class="inline-dropdown">
+					<b>city</b>
+					<ul id="hiddenCities" class="inline-selections">
+						<li class="inline-selection selected">singapore</li>
+						<li class="inline-selection">zurich</li>
+					</ul>
+				</span> to see a solar energy model. We have provided several
 				different simulation results to view. Select a different,
 				<span id="hiddenSeason" class="inline-dropdown">
-					time period
-					<ul class="inline-selections">
+					<b>time period</b>
+					<ul id="hiddenSeasons" class="inline-selections">
 						<li class="inline-selection selected">annual</li>
 						<li class="inline-selection">spring</li>
 						<li class="inline-selection">summer</li>
@@ -60,16 +67,16 @@
 			</h2>
 		</div>
 		<div class="legend-container">
-			<div>
-				<h2 id="currentSeason" class="inline-sentence legend-header"></h2>
+			<div id="legend-header">
+				<h2 id="currentSeason" class="inline-sentence"></h2>
 			</div>
 			<div id="cbar-container">
 				<div id="cbar-labels" class="legend-float">
 					<div id="cbar-label-top" class="inline-sentence cbar-label">
-						550 - 
+						550 -
 					</div>
 					<div id="cbar-label-bottom" class="inline-sentence cbar-label">
-						0 - 
+						0 -
 					</div>
 				</div>
 				<div id="cbar" class="legend-float">
