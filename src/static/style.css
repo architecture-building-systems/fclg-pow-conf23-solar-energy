@@ -100,11 +100,12 @@ body {
 .inline-selection {
     list-style-type: none;
     padding: 5px 0 5px 10px;
+    background-color: #fff;
     
 
     &:hover {
         cursor: pointer;
-        background-color: #D81A60;
+        background-color: #268BCC;
         color: white;
     }
 }
